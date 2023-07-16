@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matching Advertisements</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Matching Advertisements</h1>
+    {% if matching_ads %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Ad Num 1</th>
+                    <th>Ad Num 2</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ad in matching_ads %}
+                <tr>
+                    <td>{{ ad['Ad Num 1'] }}</td>
+                    <td>{{ ad['Ad Num 2'] }}</td>
+                    <td>{{ ad['Count'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    {% else %}
+        <p>No matching advertisements found for the given registration number.</p>
+    {% endif %}
+</body>
+</html>

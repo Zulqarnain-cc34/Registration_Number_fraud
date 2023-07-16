@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Body style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Heading style */
+h1 {
+  color: #333;
+}
+
+/* Form style */
+form {
+  margin-top: 20px;
+}
+
+/* Input style */
+input[type="text"] {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Button style */
+input[type="submit"] {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Result table style */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 12px 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Table header style */
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Table rows alternate background color */
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* No matching advertisements message style */
+p.no-match {
+  color: red;
+  font-style: italic;
+}

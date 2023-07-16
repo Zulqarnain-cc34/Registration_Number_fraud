@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matching Advertisements</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Enter Registration Number:</h1>
+    <form action="/search" method="post">
+        <input type="text" name="reg_number" required>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
